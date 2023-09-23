@@ -1,0 +1,140 @@
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #1a1a1a, #000000); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 10px 0;
+}
+
+/* Home Movies */
+.navbar-brand {
+    color: #ffcc00; 
+    font-weight: bold;
+    font-size: 28px;
+    margin-right: 30px; 
+    letter-spacing: 3px;
+}
+
+/*  link della navbar */
+.navbar-nav .nav-item {
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    color: #ffcc00; 
+    font-weight: bold;
+    font-size: 18px; 
+    padding: 10px 20px;
+    border-radius: 6px; 
+    margin: 0 10px; 
+    transition: background 0.3s ease, color 0.3s ease; 
+    background: linear-gradient(to right, #1a1a1a, #000000);
+    text-decoration: none; 
+}
+
+.navbar-nav .nav-link:hover {
+    background: linear-gradient(to right, #ffcc00, #ff9900); 
+    color: #000; 
+}
+
+.navbar-brand:hover {
+    color: #ffcc00be;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* style.css */
+/* backgrond css e decorazioni bg */
+body {
+    background-color: #000; /* Colore di sfondo nero per il corpo */
+    color: #fff;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000, #1a1a1a); /* Gradiant nero scuro */
+    z-index: -1;
+}
+
+.background::before,
+.background::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #ffcc00, transparent); /* Gradiant giallo oro */
+}
+
+.background::before {
+    top: 0;
+    left: 0;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+}
+
+.background::after {
+    bottom: 0;
+    left: 0;
+    transform: skewY(5deg);
+    transform-origin: bottom left;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*footer css*/
+
+.footer {
+    background: linear-gradient(to right, #1a1a1a, #000000);
+    color: #ffcc00;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+.footer-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icon-link {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #ffcc00;
+}
+
+.popular-movies {
+    list-style: none;
+    padding: 0;
+}
+
+.popular-movies li {
+    margin-bottom: 16px;
+}
+
+.popular-movies a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+.copyright {
+    font-size: 14px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
