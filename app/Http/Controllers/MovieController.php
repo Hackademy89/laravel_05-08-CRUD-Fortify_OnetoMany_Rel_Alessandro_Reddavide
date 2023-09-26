@@ -13,9 +13,9 @@ class MovieController extends Controller
     function index()
     {   
         $movies = Movie::all(); /*ricavo tutti i film*/
-   
+        
                                  /*callback index movie*/
-        return view('movieindex');
+        return view('movieindex', compact('movies'));
     }
     function create()
     { 
