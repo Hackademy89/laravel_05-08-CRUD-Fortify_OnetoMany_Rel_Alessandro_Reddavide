@@ -41,7 +41,7 @@
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
-/* style.css */
+
 /* backgrond css e decorazioni bg */
 body {
     background-color: #000; /* Colore di sfondo nero per il corpo */
@@ -88,12 +88,62 @@ body {
     padding: 100px 0;
     color: #fff;
 }
+/*--------------------------------------------------------------------------------------------------------*/
+/*cardmovie*/
+.cardmovie {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(181, 177, 177, 0.291);
+    transition: transform 0.3s ease;
+    height: 500px;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Numero di righe desiderate */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 
 
+.btnshow{
+    background: linear-gradient(to right, #1a1a1a, #000000);
+    color: #ffcc00;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
 
+.btnshow:hover{
+    background: linear-gradient(to right, #ffcc00, #ff9900);
+    color: #000;
+}
 
+.imgmovie{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
+.imgmovieshow {
+    width: 80%;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.imgprewiew{
+    width: 50px;
+    height: 50px;
+}
 /*--------------------------------------------------------------------------------------------------------*/
 /*footer css*/
 
