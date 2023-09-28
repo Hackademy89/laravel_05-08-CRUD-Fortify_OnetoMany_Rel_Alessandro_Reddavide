@@ -17,7 +17,10 @@
                     <a class="nav-link" href="{{ route('movie.create') }}">Create Movie</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Log In</a>
+                    <a class="nav-link" href="{{ route('register') }}">Registrati</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('login') }}}">Log In</a>
                 </li>
             </ul>
         </div>

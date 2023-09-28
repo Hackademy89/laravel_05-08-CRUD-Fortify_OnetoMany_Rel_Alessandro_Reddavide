@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class PublicController extends Controller
 {
     function index(){
-        return view('home');
+        return view('movie.home');
     }
 }

@@ -15,6 +15,6 @@ class Movie extends Model
         'director',
         'genere', 
         'description', 
-        'img'
+        'img',
     ];
 }
