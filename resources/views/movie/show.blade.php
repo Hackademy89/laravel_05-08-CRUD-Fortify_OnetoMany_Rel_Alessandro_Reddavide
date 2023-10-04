@@ -18,5 +18,11 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-6">
+                Creato da : <b>{{ $movie->user->name }}</b> 
+                il {{ $movie->created_at->format('d-m-Y')}}
+            </div>
+        </div>
 
 </x-layout>

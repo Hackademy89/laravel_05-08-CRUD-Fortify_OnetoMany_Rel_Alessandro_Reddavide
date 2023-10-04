@@ -4,9 +4,9 @@
 
         <h5 class="card-title">{{ $movie->title }}</h5>
         <p class="card-text my-2"><strong>Year:</strong> {{ $movie->year }}</p>
-        <p class="card-text"><strong>Director:</strong> {{ $movie->director }}</p>
+        <p class="card-text"><strong>Director:</strong> {{ $movie->director->name }}</p>
         <p class="card-text"><strong>Genere:</strong> {{ $movie->genere }}</p>
-        <p class="card-text">{{ $movie->description }}</p>
+        <p class="card-text card-description">{{ $movie->description }}</p>
 
         <div class="d-flex justify-content-center align-items-center" name="btnzone">
             <div><a href="{{ route('movie.show', $movie) }}" class="btnshow my-3">Mostra</a></div>
@@ -17,7 +17,6 @@
                 @csrf 
                 <button type="submit" class="btnshow my-3">Elimina</button>
             </form>
-             
         </div>
     </div>
 </div>

@@ -2,21 +2,47 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Director;
+use App\Models\Platform;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DatabaseSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+       $directors = [
+        [
+        'name' => 'John Doe',
+        'nationality' => 'USA',
+        ],
+        [
+        'name' => 'Mario Rossi',
+        'nationality' => 'Italy',
+        ],
+        [
+        'name' => 'Lina Bianchi',
+        'nationality' => 'Germany',
+        ]
+        ];
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        foreach ($directors as $director) {
+            Director::create([
+                'name' => $director['name'],
+                'nationality' => $director['nationality'],
+            ]);
+            
+        }
+    
+        $platforms = ['Netflix', 'Amazon', 'Disney+', 'Apple TV+', 'NowTv', 'Paramount+'];
+        foreach ($platforms as $name) {
+            Platform::create([
+                'name' => $name
+            ]);
+        }
+
     }
 }

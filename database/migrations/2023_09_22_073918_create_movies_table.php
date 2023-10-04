@@ -16,7 +16,6 @@ return new class extends Migration
             $table->id(); /* primary key */
             $table->string('title'); 
             $table->integer('year');
-            $table->string('director');
             $table->text('description');
             $table->string('genere');
             $table->string('img');
